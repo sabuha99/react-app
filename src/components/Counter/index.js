@@ -19,11 +19,18 @@ const Counter=()=>{
             clickleyende={()=>{
                 setCount(0)
             }}/>
+            <Button txt="special"
+            clickleyende={()=>{
+                const eded=+prompt(`ededi daxil edin:`)
+                setCount(eded)
+            }}/>
+
              <Button 
              txt="console"
             clickleyende={()=>{
              console.log(count)
             }}/>
+
              <Button 
              txt={`${isDarkMode?"light🌞":`dark🌚`}mode`}
             clickleyende={()=>{
