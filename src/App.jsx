@@ -1,8 +1,9 @@
-import Counter from "./components/Counter";
+import Users from "./components/Users";
 function App(){
-    return (<div>
-      <Counter />
-        </div>
+    return (
+    <>
+      <Users />
+        </>
 
     );
   }
