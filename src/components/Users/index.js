@@ -18,11 +18,12 @@ const Users =()=>{
             <div className={styles.cardContainer}>
                 {
                     usersData.map((user)=>{
-                        return <User key={user.id} imgSrc={`/img/${user.img}.jpg`} basliq={user.username} description={user.job} />
+                        return <User key={user.id} 
+                        imgSrc={`/img/${user.img}.jpg`}
+                         basliq={user.username} 
+                         description={user.job} />
             
-                    })
-                }
-          
+                    })}
             </div>
         </div>
     )
