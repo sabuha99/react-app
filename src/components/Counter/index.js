@@ -1,3 +1,4 @@
+import PageContainer from "components/PageContainer";
 import { useState } from "react";
 import Button from "../Button/Button";
 import styles from "./index.module.css"
@@ -6,7 +7,8 @@ const Counter=()=>{
     const[isDarkMode,setIsDarkMode]=useState(true)
   
     return(
-        <div style={{height:`100vh`}} className={isDarkMode?styles.darkMode:""}>
+        <PageContainer>
+        <div style={{height:"80vh"}} className={isDarkMode?styles.darkMode:""}>
             <h1>{count}</h1>
             <Button txt="+" clickleyende={()=>{
             setCount(count+1)
@@ -37,6 +39,7 @@ const Counter=()=>{
             setIsDarkMode(!isDarkMode)
             }}/>
         </div>
+        </PageContainer>
     )
 }
 export default Counter;

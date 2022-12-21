@@ -1,7 +1,7 @@
 const Header=()=>{
 return(
-<header style={{backgroundColor:`aqua`}}>
-    <h1>say hiii</h1>
+<header style={{backgroundColor:`lime`}}>
+    <h1>header</h1>
 </header>
 ) 
 }

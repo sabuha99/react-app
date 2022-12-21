@@ -4,10 +4,12 @@ import { useState } from "react";
 import Button from "components/Button/Button";
 
 import usersData from "./users.json"
+import PageContainer from "components/PageContainer";
 
 const Users =()=>{
     const[isDarkMode,setIsDarkMode]=useState(true)
     return (
+        <PageContainer>
         <div className={`${styles.usersContainer} ${isDarkMode ? styles.darkMode:""}`}>
              <Button 
              txt={`${isDarkMode?"🌞":`🌚`}`}
@@ -26,6 +28,7 @@ const Users =()=>{
                     })}
             </div>
         </div>
+        </PageContainer>
     )
 }
 export default Users;
